@@ -13,10 +13,10 @@ const CTASection = () => {
       
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-          Join Early Adopters
+          Stop Wasting Time on Docs
         </h2>
         <p className="text-xl sm:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Join early adopters shaping the future of effortless documentation.
+          Join early adopters who are already saving 5+ hours per week on documentation.
         </p>
         
         {/* Email signup with dark variant */}

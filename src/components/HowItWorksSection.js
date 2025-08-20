@@ -9,7 +9,7 @@ const HowItWorksSection = () => {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            All you have to do is work as usual. Our secure recorder observes what you do and automatically generates context-aware documentation.
+            Stop losing time to documentation. Our secure recorder captures your work and AI generates comprehensive docs automatically.
           </p>
         </div>
         
@@ -61,7 +61,7 @@ const HowItWorksSection = () => {
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               Private
             </div>
-            <div className="flex items-center gap-2 text-gray-700 font-medium">
+            <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
               Secure
             </div>

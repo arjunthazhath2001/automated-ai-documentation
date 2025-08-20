@@ -19,7 +19,7 @@ const HeroSection = () => {
           
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Just do your work — our AI captures, organizes, and turns it into clear documentation.
+            Engineers waste hours writing repetitive docs. Our AI records your workflow and auto-generates documentation for you.
           </p>
           
           {/* Email signup */}

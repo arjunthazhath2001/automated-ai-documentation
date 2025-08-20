@@ -4,23 +4,23 @@ const ValuePropsSection = () => {
   const valueProps = [
     {
       icon: '⚡',
-      title: 'Instant Documentation',
-      description: 'Get comprehensive docs generated in real-time as you work, with no manual effort required.'
+      title: 'Save 5+ Hours Weekly',
+      description: 'Stop manually writing docs. AI generates comprehensive documentation while you focus on your actual work.'
     },
     {
       icon: '🔒',
-      title: 'Secure & Private',
-      description: 'Your data stays private and secure. We never access or share your sensitive information.'
+      title: '100% Private & Secure',
+      description: 'Your data never leaves your control. We use enterprise-grade security with zero data sharing.'
     },
     {
       icon: '🤖',
       title: 'Context-Aware AI',
-      description: 'Advanced AI that understands your workflow and creates relevant, actionable documentation.'
+      description: 'Advanced AI that understands your workflow and creates relevant, actionable documentation automatically.'
     },
     {
       icon: '🌍',
-      title: 'For Anyone Who Documents Work',
-      description: 'Whether you\'re a developer, engineer, or professional, our solution adapts to your needs.'
+      title: 'Works for Every Team',
+      description: 'Developers, DevOps, product teams—our solution adapts to any workflow and documentation needs.'
     }
   ]
 
@@ -29,11 +29,11 @@ const ValuePropsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Why Choose AI Docs?
+            Why Engineers Choose AI Docs?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We've built the most intelligent, secure, and effortless documentation solution 
-            for modern teams and professionals.
+            We've built the most intelligent, secure, and time-saving documentation solution 
+            for modern development teams.
           </p>
         </div>
         
@@ -61,7 +61,7 @@ const ValuePropsSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full card-shadow">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-700">
-              Trusted by teams worldwide
+              Trusted by development teams worldwide
             </span>
           </div>
         </div>
