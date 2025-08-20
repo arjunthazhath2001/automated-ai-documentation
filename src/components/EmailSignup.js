@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { supabase } from '../supabase'
+import { logEmailSignup } from '../ga'
 
 const EmailSignup = ({ className = '', variant = 'primary' }) => {
   const [email, setEmail] = useState('')
@@ -25,6 +26,9 @@ const EmailSignup = ({ className = '', variant = 'primary' }) => {
         }
         return
       }
+
+      // Track successful email signup in GA
+      logEmailSignup()
 
       setIsSuccess(true)
       setEmail('')
