@@ -2,6 +2,7 @@ import React from 'react'
 import EmailSignup from './EmailSignup'
 import SignupCounter from './SignupCounter'
 import ProductHuntBadge from './ProductHuntBadge'
+import YCombinatorBadge from './YCombinatorBadge'
 
 const HeroSection = () => {
   return (
@@ -11,9 +12,10 @@ const HeroSection = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center">
-          {/* Product Hunt Badge */}
-          <div className="mb-8">
+          {/* Credibility Badges */}
+          <div className="mb-8 flex flex-wrap justify-center gap-3">
             <ProductHuntBadge />
+            <YCombinatorBadge />
           </div>
           
           {/* Main headline */}
