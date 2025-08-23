@@ -1,5 +1,6 @@
 import React from 'react'
 import EmailSignup from './EmailSignup'
+import SignupCounter from './SignupCounter'
 
 const HeroSection = () => {
   return (
@@ -23,9 +24,12 @@ const HeroSection = () => {
           </p>
           
           {/* Email signup */}
-          <div className="max-w-md mx-auto">
+          <div className="max-w-md mx-auto mb-6">
             <EmailSignup />
           </div>
+          
+          {/* Signup counter */}
+          <SignupCounter className="mb-8" />
           
           {/* Trust indicators */}
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">

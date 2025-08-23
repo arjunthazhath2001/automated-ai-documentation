@@ -1,5 +1,6 @@
 import React from 'react'
 import EmailSignup from './EmailSignup'
+import SignupCounter from './SignupCounter'
 
 const CTASection = () => {
   return (
@@ -20,9 +21,12 @@ const CTASection = () => {
         </p>
         
         {/* Email signup with dark variant */}
-        <div className="max-w-md mx-auto mb-8">
+        <div className="max-w-md mx-auto mb-6">
           <EmailSignup variant="dark" />
         </div>
+        
+        {/* Signup counter */}
+        <SignupCounter className="mb-8" />
         
         {/* Additional benefits */}
         <div className="grid md:grid-cols-3 gap-6 text-blue-100">
