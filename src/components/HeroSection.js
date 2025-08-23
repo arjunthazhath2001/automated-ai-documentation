@@ -6,7 +6,7 @@ import YCombinatorBadge from './YCombinatorBadge'
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-white pt-24">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-blue-50"></div>
       

@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import { initGA, logPageView } from './ga'
+import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import PainPointsSection from './components/PainPointsSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import WhoItsForSection from './components/WhoItsForSection'
 import ValuePropsSection from './components/ValuePropsSection'
 import CTASection from './components/CTASection'
+import Footer from './components/Footer'
 
 function App() {
   useEffect(() => {
@@ -15,12 +17,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       <HeroSection />
       <PainPointsSection />
       <HowItWorksSection />
       <WhoItsForSection />
       <ValuePropsSection />
       <CTASection />
+      <Footer />
     </div>
   )
 }
