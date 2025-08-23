@@ -16,7 +16,7 @@ const SignupCounter = ({ className = '' }) => {
     // Simulate new signups every 3-8 seconds
     const interval = setInterval(() => {
       setCount(prev => prev + 1)
-    }, Math.random() * 5000 + 3000) // Random interval between 3-8 seconds
+    }, Math.random() * 8000 + 3000) // Random interval between 3-8 seconds
 
     return () => clearInterval(interval)
   }, [isVisible])
