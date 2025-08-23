@@ -1,6 +1,7 @@
 import React from 'react'
 import EmailSignup from './EmailSignup'
 import SignupCounter from './SignupCounter'
+import ProductHuntBadge from './ProductHuntBadge'
 
 const HeroSection = () => {
   return (
@@ -10,6 +11,11 @@ const HeroSection = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center">
+          {/* Product Hunt Badge */}
+          <div className="mb-8">
+            <ProductHuntBadge />
+          </div>
+          
           {/* Main headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Documentation That{' '}
