@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const SignupCounter = ({ className = '' }) => {
-  const [count, setCount] = useState(92)
+  const [count, setCount] = useState(1092)
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
