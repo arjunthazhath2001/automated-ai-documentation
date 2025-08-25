@@ -62,43 +62,7 @@ const HeroSection = () => {
             Engineers waste hours writing repetitive docs. Our AI records your workflow and auto-generates documentation for you.
           </p>
           
-          {/* Heidi Features */}
-          <div className={`mb-12 max-w-4xl mx-auto transition-all duration-300 ${
-            isDark 
-              ? 'text-gray-300' 
-              : 'text-gray-600'
-          }`}>
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
-                    isDark ? 'bg-purple-400' : 'bg-purple-500'
-                  }`}></div>
-                  <p className="text-lg">Quietly records your team's work and turns it into living documentation</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
-                    isDark ? 'bg-blue-400' : 'bg-blue-500'
-                  }`}></div>
-                  <p className="text-lg">Automatically captures undocumented fixes, unique workflows, and company-specific practices</p>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
-                    isDark ? 'bg-green-400' : 'bg-green-500'
-                  }`}></div>
-                  <p className="text-lg">Instantly find what happened in the last 24 hours and recall past solutions</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
-                    isDark ? 'bg-orange-400' : 'bg-orange-500'
-                  }`}></div>
-                  <p className="text-lg">Resolve issues faster without writing a single line of documentation</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Tagline */}
           <p className={`mb-8 text-base sm:text-lg font-medium max-w-2xl mx-auto ${

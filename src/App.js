@@ -10,6 +10,7 @@ import ValuePropsSection from './components/ValuePropsSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 import ScreenshotsSection from './components/ScreenshotsSection'
+import FeaturesSection from './components/FeaturesSection'
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
         <Header />
         <HeroSection />
         <ScreenshotsSection />
+        <FeaturesSection />
         <PainPointsSection />
         <HowItWorksSection />
         <WhoItsForSection />
