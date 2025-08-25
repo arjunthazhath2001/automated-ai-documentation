@@ -58,17 +58,17 @@ const ScreenshotsSection = () => {
           className="absolute inset-0"
           style={{
             background: isDark
-              ? 'radial-gradient(1200px 600px at 10% 0%, rgba(124, 58, 237, 0.15), transparent 50%), radial-gradient(1200px 600px at 90% 100%, rgba(59, 130, 246, 0.15), transparent 50%), linear-gradient(180deg, rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9))'
-              : 'radial-gradient(1200px 600px at 10% 0%, rgba(168, 85, 247, 0.15), transparent 50%), radial-gradient(1200px 600px at 90% 100%, rgba(59, 130, 246, 0.15), transparent 50%), linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,1))',
+              ? 'radial-gradient(1200px 600px at 10% 0%, rgba(147, 112, 219, 0.10), transparent 55%), radial-gradient(1200px 600px at 90% 100%, rgba(96, 165, 250, 0.10), transparent 55%), linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(17, 24, 39, 0.92))'
+              : 'radial-gradient(1000px 500px at 12% 0%, rgba(196, 181, 253, 0.12), transparent 55%), radial-gradient(1000px 500px at 88% 100%, rgba(191, 219, 254, 0.12), transparent 55%), linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.98))',
           }}
         />
         {/* SVG noise overlay for grain */}
-        <svg className="absolute inset-0 w-full h-full opacity-30 mix-blend-overlay pointer-events-none" aria-hidden="true">
+        <svg className="absolute inset-0 w-full h-full opacity-15 mix-blend-overlay pointer-events-none" aria-hidden="true">
           <filter id="noiseFilter">
-            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+            <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch" />
             <feColorMatrix type="saturate" values="0" />
           </filter>
-          <rect width="100%" height="100%" filter="url(#noiseFilter)" fill={isDark ? '#000000' : '#ffffff'} />
+          <rect width="100%" height="100%" filter="url(#noiseFilter)" fill={isDark ? '#0b0b0b' : '#ffffff'} />
         </svg>
       </div>
 
