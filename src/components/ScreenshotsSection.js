@@ -52,23 +52,15 @@ const ScreenshotsSection = () => {
 
   return (
     <section className={`relative py-16 sm:py-20 ${isDark ? 'bg-gray-950' : 'bg-white'}`}>
-      {/* Grainy gradient background (section-only) */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: isDark
-              ? 'radial-gradient(1200px 600px at 10% 0%, rgba(147, 112, 219, 0.10), transparent 55%), radial-gradient(1200px 600px at 90% 100%, rgba(96, 165, 250, 0.10), transparent 55%), linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(17, 24, 39, 0.92))'
-              : 'radial-gradient(1000px 500px at 12% 0%, rgba(196, 181, 253, 0.12), transparent 55%), radial-gradient(1000px 500px at 88% 100%, rgba(191, 219, 254, 0.12), transparent 55%), linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.98))',
-          }}
-        />
-        {/* SVG noise overlay for grain */}
-        <svg className="absolute inset-0 w-full h-full opacity-15 mix-blend-overlay pointer-events-none" aria-hidden="true">
-          <filter id="noiseFilter">
+      {/* Animated grainy gradient background */}
+      <div className="screenshots-animated-bg">
+        <div className={`screenshots-animated-bg__layer ${isDark ? 'screenshots-animated-bg__layer--dark' : 'screenshots-animated-bg__layer--light'}`}></div>
+        <svg className="screenshots-animated-bg__noise" aria-hidden="true">
+          <filter id="noiseFilterScreenshots">
             <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch" />
             <feColorMatrix type="saturate" values="0" />
           </filter>
-          <rect width="100%" height="100%" filter="url(#noiseFilter)" fill={isDark ? '#0b0b0b' : '#ffffff'} />
+          <rect width="100%" height="100%" filter="url(#noiseFilterScreenshots)" fill={isDark ? '#0b0b0b' : '#ffffff'} />
         </svg>
       </div>
 

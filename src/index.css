@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animated gradient for ScreenshotsSection */
+@keyframes screenshotsGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.screenshots-animated-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.screenshots-animated-bg__layer {
+  position: absolute;
+  inset: 0;
+  background-size: 200% 200%;
+  animation: screenshotsGradientShift 20s ease-in-out infinite;
+}
+
+/* Light theme palette */
+.screenshots-animated-bg__layer--light {
+  background-image:
+    radial-gradient(1000px 500px at 12% 0%, rgba(196, 181, 253, 0.18), transparent 55%),
+    radial-gradient(1000px 500px at 88% 100%, rgba(191, 219, 254, 0.18), transparent 55%),
+    linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(245, 243, 255, 0.9) 50%, rgba(239, 246, 255, 0.9) 100%);
+}
+
+/* Dark theme palette */
+.screenshots-animated-bg__layer--dark {
+  background-image:
+    radial-gradient(1200px 600px at 10% 0%, rgba(147, 112, 219, 0.14), transparent 55%),
+    radial-gradient(1200px 600px at 90% 100%, rgba(96, 165, 250, 0.14), transparent 55%),
+    linear-gradient(120deg, rgba(17,24,39,0.98) 0%, rgba(24, 24, 43, 0.98) 50%, rgba(17, 30, 48, 0.98) 100%);
+}
+
+.screenshots-animated-bg__noise {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
