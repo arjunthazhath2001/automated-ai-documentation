@@ -52,6 +52,26 @@ const ScreenshotsSection = () => {
 
   return (
     <section className={`relative py-16 sm:py-20 ${isDark ? 'bg-gray-950' : 'bg-white'}`}>
+      {/* Grainy gradient background (section-only) */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            background: isDark
+              ? 'radial-gradient(1200px 600px at 10% 0%, rgba(124, 58, 237, 0.15), transparent 50%), radial-gradient(1200px 600px at 90% 100%, rgba(59, 130, 246, 0.15), transparent 50%), linear-gradient(180deg, rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9))'
+              : 'radial-gradient(1200px 600px at 10% 0%, rgba(168, 85, 247, 0.15), transparent 50%), radial-gradient(1200px 600px at 90% 100%, rgba(59, 130, 246, 0.15), transparent 50%), linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,1))',
+          }}
+        />
+        {/* SVG noise overlay for grain */}
+        <svg className="absolute inset-0 w-full h-full opacity-30 mix-blend-overlay pointer-events-none" aria-hidden="true">
+          <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+            <feColorMatrix type="saturate" values="0" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#noiseFilter)" fill={isDark ? '#000000' : '#ffffff'} />
+        </svg>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-14">
           <h2 className={`text-3xl sm:text-4xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>See Heidi in action</h2>
@@ -89,11 +109,7 @@ const ScreenshotsSection = () => {
           </div>
         </div>
 
-        {/* Subtle gradient background accents */}
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className={`absolute -top-10 left-10 h-64 w-64 rounded-full blur-3xl ${isDark ? 'bg-purple-600/10' : 'bg-purple-400/10'}`}></div>
-          <div className={`absolute -bottom-16 right-10 h-72 w-72 rounded-full blur-3xl ${isDark ? 'bg-blue-600/10' : 'bg-blue-400/10'}`}></div>
-        </div>
+        
       </div>
       {/* Lightbox modal */}
       {activeImage && (
