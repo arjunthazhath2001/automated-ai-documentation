@@ -99,6 +99,13 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+
+          {/* Tagline */}
+          <p className={`mb-8 text-base sm:text-lg font-medium max-w-2xl mx-auto ${
+            isDark ? 'text-gray-300' : 'text-gray-700'
+          }`}>
+            "Documentation so good that even an intern can understand"
+          </p>
           
           {/* Email signup */}
           <div className="max-w-md mx-auto mb-6">
