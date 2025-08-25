@@ -9,6 +9,7 @@ import WhoItsForSection from './components/WhoItsForSection'
 import ValuePropsSection from './components/ValuePropsSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
+import ScreenshotsSection from './components/ScreenshotsSection'
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
         <Header />
         <HeroSection />
+        <ScreenshotsSection />
         <PainPointsSection />
         <HowItWorksSection />
         <WhoItsForSection />
