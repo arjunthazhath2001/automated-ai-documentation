@@ -151,7 +151,7 @@ const CTASection = () => {
           viewport={{ once: true }}
         >
           <p className="text-blue-200 text-sm">
-            No spam, ever. Unsubscribe at any time.
+            No spam, ever.     Unsubscribe at any time. 
           </p>
         </motion.div>
       </div>
